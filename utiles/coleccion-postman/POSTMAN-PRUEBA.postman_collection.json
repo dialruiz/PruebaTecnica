@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "ee6d4fe0-e1c7-40a2-8a3c-1f5176cb693b",
+		"name": "POSTMAN-PRUEBA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Prueba polizas amparos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"idTipoIdentificacion\": 1,\r\n\"numeroIdentificacion\": \"79000002\",\r\n\"valorAsegurado\":100000}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/consultarAmparosPorPersona",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"consultarAmparosPorPersona"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
